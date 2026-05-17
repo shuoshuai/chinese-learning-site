@@ -1,0 +1,170 @@
+.lesson-detail-container {
+  width: 100%;
+}
+
+.back-link {
+  display: inline-block;
+  color: #667eea;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: #764ba2;
+}
+
+.lesson-detail-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+  border-radius: 12px;
+}
+
+.detail-emoji {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.lesson-detail-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.detail-description {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.lesson-detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.words-section h2,
+.examples-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #667eea;
+}
+
+.words-table-wrapper {
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.words-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.words-table th {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.2rem;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.words-table td {
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 0.95rem;
+}
+
+.words-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.chinese-word {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.pinyin {
+  color: #667eea;
+  font-style: italic;
+}
+
+.japanese {
+  color: #333;
+}
+
+.english {
+  color: #666;
+  font-style: italic;
+}
+
+.examples-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.example-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.example-chinese {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.example-pinyin {
+  font-size: 1rem;
+  color: #667eea;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.example-translations {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.example-japanese {
+  color: #333;
+}
+
+.example-english {
+  color: #666;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .lesson-detail-header h1 {
+    font-size: 2rem;
+  }
+
+  .words-table {
+    font-size: 0.85rem;
+  }
+
+  .words-table th,
+  .words-table td {
+    padding: 0.75rem;
+  }
+
+  .example-chinese {
+    font-size: 1rem;
+  }
+}
